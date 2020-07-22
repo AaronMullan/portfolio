@@ -1,8 +1,164 @@
 // Override default variables before the import
-$body-bg: #fff;
+$body-bg: #272822;
 // Import Bootstrap and its default variables
 $theme-colors: (
   primary: #A6E22E,
   secondary: #66D9EF,
 );
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #ebebeb;
+$gray-300: #dee2e6;
+$blue: #66D9EF;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #F92672;
+$orange: #FD971F;
+$yellow: #E6DB74;
+$green: #A6E22E;
+$teal: #20c997;
+$cyan: #AE81FF;
+$primary: $blue;
+$gray-700: #49483E;
+$secondary: $gray-700;
+$success: $green;
+$info: $cyan;
+$warning: $orange;
+$danger: $pink;
+$gray-800: #3E3D32;
+$light: $gray-800;
+$gray-500: rgb(136, 132, 111);
+$dark: $gray-500;
+$yiq-contrasted-threshold: 175;
+$gray-900: #272822;
+$body-bg: $gray-900;
+$body-color: $white;
+$font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-size-base: 0.9375rem;
+$h1-font-size: 3rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 2rem;
+$h4-font-size: 2rem;
+$h5-font-size: 1.5rem;
+$table-accent-bg: $gray-800;
+$table-hover-bg: rgba($white,.075);
+$table-border-color: $gray-700;
+$table-dark-bg: $gray-500;
+$table-dark-border-color: darken($gray-500, 7.5%);
+$table-dark-color: $body-bg;
+$input-btn-padding-x: 1rem;
+$gray-600: #75715E;
+$input-disabled-bg: $gray-600;
+$input-border-color: transparent;
+$input-group-addon-color: $gray-500;
+$input-group-addon-bg: $gray-700;
+$custom-file-color: $gray-500;
+$custom-file-border-color: $gray-700;
+$dropdown-bg: $gray-900;
+$dropdown-divider-bg: $gray-700;
+$dropdown-link-color: $white;
+$dropdown-link-hover-color: $white;
+$dropdown-link-hover-bg: $primary;
+$nav-tabs-border-color: $gray-700;
+$nav-tabs-link-hover-border-color: $nav-tabs-border-color $nav-tabs-border-color transparent;
+$nav-tabs-link-active-color: $white;
+$nav-tabs-link-active-bg: $nav-tabs-border-color;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-color transparent;
+$navbar-dark-hover-color: $success;
+$pagination-color: $white;
+$pagination-bg: $success;
+$pagination-border-color: transparent;
+$pagination-hover-color: $white;
+$pagination-hover-bg: lighten($success, 10%);
+$pagination-hover-border-color: transparent;
+$pagination-disabled-bg: darken($success, 15%);
+$pagination-disabled-border-color: transparent;
+$jumbotron-bg: $gray-800;
+$card-bg: $gray-800;
+$tooltip-bg: $gray-700;
+$tooltip-opacity: 1;
+$popover-bg: $gray-800;
+$modal-content-bg: $gray-800;
+$modal-header-border-color: $gray-700;
+$progress-bg: $gray-700;
+$list-group-bg: $gray-800;
+$list-group-border-color: $gray-700;
+$list-group-hover-bg: $gray-700;
+$list-group-disabled-bg: $gray-700;
+$list-group-action-active-bg: $primary;
+$breadcrumb-bg: $gray-700;
+$close-color: $white;
+$close-text-shadow: none;
+$pre-color: inherit;
+$black: #000;
+$link-color: $success;
+$dropdown-border-color: $gray-700;
+$nav-link-padding-x: 2rem;
+$nav-link-disabled-color: $gray-500;
+$navbar-padding-y: 1rem;
+$navbar-dark-color: $white;
+$navbar-light-color: rgba($white,.5);
+$navbar-light-hover-color: $white;
+$navbar-light-active-color: $white;
+$navbar-light-disabled-color: rgba($white,.3);
+$navbar-light-toggler-border-color: rgba($white,.1);
+$pagination-border-width: 0;
+$pagination-active-bg: $pagination-hover-bg;
+$pagination-active-border-color: transparent;
+$pagination-disabled-color: $white;
+$card-cap-bg: $gray-700;
+$popover-header-bg: $gray-700;
+$modal-content-border-color: $gray-700;
+$progress-height: 0.625rem;
+$progress-font-size: 0.625rem;
+$headings-color: $success;
+
 @import '~bootstrap/scss/bootstrap.scss';
+.App {
+  text-align: center;
+  background-color: #272822;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #F8F8F2;
+  margin: 0 3vw;
+}
+.body {
+  margin-top: 3vh;
+}
+.paragraph-container{
+  display: flex;
+  justify-content: center;
+  margin: 5vh;
+  
+}
+.paragraph{
+  text-align: justify;
+  font-size: .75em;
+  background-color: $cyan;
+  border-radius: .5rem;
+  line-height: 1.2;
+  width: 80vw;
+  padding: 5vh;
+}
+.summary{
+  display: flex;
+  justify-items: center;
+  margin: 2vw 5vw;
+  text-align: justify;
+}
+.card-footer{
+  display: flex;
+  justify-content: space-around;
+}
+.card-text{
+  font-size: 1rem;
+}
+h5{
+  color: $pink;
+  font-size: 1.25rem;
+}
