@@ -15,7 +15,6 @@ function App() {
         <div className="body">
 
           <div className="title-container">
-            <h1 className="text-secondary">Aaron Mullan: Developer</h1>
             <Header />
           </div>
           <CardDeck>
