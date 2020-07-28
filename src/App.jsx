@@ -7,7 +7,7 @@ import {
 } from './Cards';
 import Header from './Header';
 import Hero from './Hero';
-import Footer from './Footer';
+import Footsie from './Footsie';
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
             <HTMLCard />
             <OpensourceCard />
           </CardDeck>
-          <Footer />
+          <Footsie />
         </div>
 
       </div>

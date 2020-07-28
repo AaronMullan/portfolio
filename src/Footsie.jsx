@@ -3,7 +3,7 @@ import { ReactComponent as Twitter } from './assets/twitter.svg';
 import { ReactComponent as Github } from './assets/github.svg';
 import { ReactComponent as LinkedIn } from './assets/linkedin.svg';
 
-export default function Footer() {
+export default function Footsie() {
   return (
     <div className="footer">
       <div className="icon-container-footer">
