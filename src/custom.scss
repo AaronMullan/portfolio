@@ -179,18 +179,20 @@ display: flex;
   text-align: justify;
 }
 h1{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Space Mono', monospace;
 }
 h5{
   color: $pink;
   font-size: 1.25rem;
+  font-family: 'Space Mono', monospace;
 }
 .header{
   justify-content: space-around;
-  background-color: $gray-800;
+  background-color: hsla(55, 11%, 22%, .25);
   border: 1px solid hsl(50, 2%, 48%);
-  border-radius: .1em;
-  padding-bottom: 1vh;;
+  border-radius: .15em;
+  padding: 2vh 1vh;
+  letter-spacing: .1rem;
 }
 .icon-container{
   display: flex;
