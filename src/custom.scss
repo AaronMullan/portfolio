@@ -243,3 +243,28 @@ h5{
 .lighter{
   color: white;
 }
+.icon-container-footer{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2vh;
+  margin-bottom: 0;
+  margin-left: calc(25% + 30px);
+  margin-right: calc(25% + 30px);
+}
+.linkedin-icon-footer{
+  height: 100%;
+  fill: $orange;
+  border-radius: .2em;
+}
+.github-icon-footer{
+  height: 100%;
+  fill: $cyan;
+  border-radius: .2em;
+  margin-left: .5em;
+}
+.twitter-icon-footer{
+  height: 100%;
+  fill: $yellow;
+  border-radius: .2em;
+  margin-left: .5em;
+}
