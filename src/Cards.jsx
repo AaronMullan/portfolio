@@ -7,6 +7,7 @@ import wantlistwatch from './assets/wantlistwatch.png';
 import node from './assets/node.png';
 import html from './assets/html.png';
 import opensource from './assets/opensource.png';
+import javascript from './assets/javascript.png';
 
 function reactTooltip(props) {
   return (
@@ -255,25 +256,52 @@ export function OpensourceCard() {
     </>
   );
 }
-
-export function AboutCard() {
+function javascriptTooltip(props) {
+  return (
+    <Tooltip id="react-tooltip" {...props}>
+      {/* eslint-disable-next-line max-len */}
+      JavaScript-based synthesizer app featuring MIDI and keyboard support, an unlimited effects chain, and real-time waveform visualization.
+    </Tooltip>
+  );
+}
+export function JavascriptCard() {
   return (
     <>
-      <Card border="dark" style={{ width: '18rem' }}>
-        <Card.Body>
-          <Card.Title style={{ color: '#20c997' }}>
-            About
-          </Card.Title>
-          <Card.Text className="about-text">
-            {/* eslint-disable-next-line max-len */}
-            Full Stack Developer focused on teamwork, learning, and having fun. After years traveling the globe as an Audio Engineer for rock bands, I now bring the passion for craftsmanship and collaboration that made me successful in that field to software development.
-            <br />
-            <br />
-            {/* eslint-disable-next-line max-len */}
-            I bring a relentless curiosity tempered by an ability to focus on the task at hand. An uncanny dedication to teamwork forged by years on the road and in the studio has given me the ability to communicate with all stakeholders to develop a vision and translate that into an inspiring and technically excellent product.
-          </Card.Text>
-        </Card.Body>
-      </Card>
+      <OverlayTrigger
+        placement="top"
+        delay={{ show: 250, hide: 400 }}
+        overlay={javascriptTooltip}
+      >
+        <Card border="dark" style={{ width: '18rem' }}>
+          <Card.Img variant="top" src={javascript} />
+          <Card.Body>
+            <Card.Title style={{ color: '#E6DB74' }}>
+              Javascript
+            </Card.Title>
+            <Card.Text>
+              Web Audio API to make a browser-based synthesizer.
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <Button
+              href="https://whateversynth.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="danger"
+            >
+              site
+            </Button>
+            <Button
+              href="https://github.com/whateverSynth/whateverSynth-frontend"
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="secondary"
+            >
+              code
+            </Button>
+          </Card.Footer>
+        </Card>
+      </OverlayTrigger>
     </>
   );
 }

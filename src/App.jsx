@@ -3,9 +3,10 @@ import {
   CardDeck, Container,
 } from 'react-bootstrap';
 import {
-  CssCard, ReactCard, NodeCard, HTMLCard, OpensourceCard, AboutCard,
+  CssCard, ReactCard, NodeCard, HTMLCard, OpensourceCard, JavascriptCard,
 } from './Cards';
 import Header from './Header';
+import Hero from './Hero';
 
 function App() {
   return (
@@ -18,16 +19,17 @@ function App() {
             <Header />
           </div>
           <CardDeck>
+            <JavascriptCard />
             <ReactCard />
             <CssCard />
-            <NodeCard />
           </CardDeck>
           <Container className="spacer" />
           <CardDeck>
+            <NodeCard />
             <HTMLCard />
             <OpensourceCard />
-            <AboutCard />
           </CardDeck>
+          <Hero />
         </div>
 
       </div>

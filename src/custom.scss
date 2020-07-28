@@ -129,7 +129,7 @@ $headings-color: $success;
   margin: 1.5vh 3vw;
 }
 .title-container{
-  margin: 3vh;
+  margin: 3vh 0;
 }
 .paragraph-container{
   display: flex;
@@ -180,6 +180,7 @@ display: flex;
 }
 h1{
   font-family: 'Space Mono', monospace;
+  font-weight: bold;
 }
 h5{
   color: $pink;
@@ -224,4 +225,21 @@ h5{
   color: $gray-900;
   text-align: justify;
   border: 1px solid black;
+}
+.jumbotron{
+  background-color: hsla(55, 11%, 22%, .25);
+  border: 1px solid hsl(50, 2%, 48%);
+  margin-top: 2vh;
+  display: flex;
+  font-size: 1rem;
+  text-align: justify;
+  padding: 2vh 2vw;
+}
+.hello{
+  font-family: 'Space Mono', monospace;
+  color:$pink;
+  font-size: 1.2rem;
+}
+.lighter{
+  color: white;
 }
