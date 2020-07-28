@@ -18,6 +18,7 @@ function App() {
           <div className="title-container">
             <Header />
           </div>
+          <Hero />
           <CardDeck>
             <JavascriptCard />
             <ReactCard />
@@ -29,7 +30,6 @@ function App() {
             <HTMLCard />
             <OpensourceCard />
           </CardDeck>
-          <Hero />
         </div>
 
       </div>
