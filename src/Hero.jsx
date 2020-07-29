@@ -9,11 +9,10 @@ export default function Hero() {
 
         {' '}
         <span className="hello">Hello, World!  </span>
-        I am a Full Stack Developer focused on teamwork, learning, and having fun.
+        Hi I am a Full Stack Developer focused on teamwork, learning, and having fun.
         <br />
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;Previous to coding, I worked as an Audio Engineer, primarily for the band
-        {' '}
         {' '}
         <a
           href="http://sonicyouth.com/main/"
