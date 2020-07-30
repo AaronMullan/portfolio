@@ -310,7 +310,7 @@ function jestTooltip(props) {
   return (
     <Tooltip id="react-tooltip" {...props}>
       {/* eslint-disable-next-line max-len */}
-      Jest coverage of 79.7% on an Express/Node/MongoDB backend for cataloging a record collection. 
+      Jest coverage of 79.7% on an Express/Node/MongoDB backend for cataloging a record collection.
     </Tooltip>
   );
 }
