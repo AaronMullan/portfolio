@@ -8,6 +8,7 @@ import node from './assets/node.png';
 import html from './assets/html.png';
 import opensource from './assets/opensource.png';
 import javascript from './assets/javascript.png';
+import jest from './assets/jest.png';
 
 function reactTooltip(props) {
   return (
@@ -298,6 +299,55 @@ export function JavascriptCard() {
               variant="secondary"
             >
               code
+            </Button>
+          </Card.Footer>
+        </Card>
+      </OverlayTrigger>
+    </>
+  );
+}
+function jestTooltip(props) {
+  return (
+    <Tooltip id="react-tooltip" {...props}>
+      {/* eslint-disable-next-line max-len */}
+      Jest coverage of 79.7% on an Express/Node/MongoDB backend for cataloging a record collection. 
+    </Tooltip>
+  );
+}
+export function JestCard() {
+  return (
+    <>
+      <OverlayTrigger
+        placement="top"
+        delay={{ show: 250, hide: 400 }}
+        overlay={jestTooltip}
+      >
+        <Card border="dark" style={{ width: '18rem' }}>
+          <Card.Img variant="top" src={jest} />
+          <Card.Body>
+            <Card.Title>
+              Jest
+            </Card.Title>
+            <Card.Text>
+              Jest coverage on database routes and models.
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <Button
+              href="https://github.com/AaronMullan/record-database/tree/master/lib/models"
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="danger"
+            >
+              models
+            </Button>
+            <Button
+              href="https://github.com/AaronMullan/record-database/tree/master/__tests__"
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="secondary"
+            >
+              routes
             </Button>
           </Card.Footer>
         </Card>
