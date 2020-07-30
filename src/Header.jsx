@@ -6,7 +6,7 @@ import { ReactComponent as LinkedIn } from './assets/linkedin.svg';
 export default function Header() {
   return (
     <div className="header">
-      <h1 className="text-secondary">Aaron Mullan: A Developer</h1>
+      <h1 className="text-secondary">Aaron Mullan: Developer</h1>
       <div className="icon-container">
         <div>
           <a
