@@ -14,13 +14,7 @@ export default function Hero() {
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;Previous to coding, I worked as an Audio Engineer, primarily for the band
         {' '}
-        <a
-          href="http://sonicyouth.com/main/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sonic Youth
-        </a>
+        <span className="lighter">Sonic Youth</span>
         , managing their studio and doing live sound. I engineered or performed at over 1,000 concerts, touring with groups including
         {' '}
         <span className="lighter">Neutral Milk Hotel</span>
