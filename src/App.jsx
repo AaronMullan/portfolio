@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  CardDeck, Container,
+  CardDeck,
 } from 'react-bootstrap';
 import {
   CssCard, ReactCard, NodeCard, HTMLCard, OpensourceCard, JavascriptCard, JestCard, PHPCard,
@@ -14,27 +14,30 @@ function App() {
     <>
       <div className="App">
 
-        <div className="body">
-
-          <div className="title-container">
-            <Header />
-          </div>
-          <Hero />
-          <CardDeck>
-            <JavascriptCard />
-            <ReactCard />
-            <CssCard />
-            <HTMLCard />
-          </CardDeck>
-          <Container className="spacer" />
-          <CardDeck>
-            <NodeCard />
-            <OpensourceCard />
-            <JestCard />
-            <PHPCard />
-          </CardDeck>
-          <Footsie />
+        <div className="title-container">
+          <Header />
         </div>
+        <div className="body">
+          <div>
+            <Hero />
+          </div>
+          <div className="deck-container">
+            <CardDeck>
+              <JavascriptCard />
+              <ReactCard />
+              <CssCard />
+              <HTMLCard />
+            </CardDeck>
+
+            <CardDeck>
+              <NodeCard />
+              <OpensourceCard />
+              <JestCard />
+              <PHPCard />
+            </CardDeck>
+          </div>
+        </div>
+        <Footsie />
 
       </div>
     </>
