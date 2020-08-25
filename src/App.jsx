@@ -25,6 +25,8 @@ function App() {
             <CardDeck>
               <JavascriptCard />
               <ReactCard />
+            </CardDeck>
+            <CardDeck>
               <CssCard />
               <HTMLCard />
             </CardDeck>
@@ -32,6 +34,8 @@ function App() {
             <CardDeck>
               <NodeCard />
               <OpensourceCard />
+            </CardDeck>
+            <CardDeck>
               <JestCard />
               <PHPCard />
             </CardDeck>
