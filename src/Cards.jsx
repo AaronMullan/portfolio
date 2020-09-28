@@ -86,7 +86,7 @@ export function CssCard() {
           </Card.Body>
           <Card.Footer>
             <Button
-              href="http://www.shavedave.org/"
+              href="https://shave-dave.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               variant="danger"
