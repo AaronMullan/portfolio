@@ -11,6 +11,57 @@ import javascript from './assets/javascript.png';
 import jest from './assets/jest.png';
 import php from './assets/php.png';
 import gatsby from './assets/gatsby.png'
+import typescript from './assets/typescript.png'
+
+function typescriptTooltip(props) {
+  return (
+    <Tooltip id="react-tooltip" {...props}>
+      {/* eslint-disable-next-line max-len */}
+      Portland, Oregon is regarded as one of the most liberal cities in the USA, while Mesa, AZ is often considered the most conservative. This visualization is made with data from the Twitter API for trends in those two cites.
+    </Tooltip>
+  );
+}
+
+export function TypescriptCard() {
+  return (
+    <>
+      <OverlayTrigger
+        placement="top"
+        delay={{ show: 250, hide: 400 }}
+        overlay={typescriptTooltip}
+      >
+        <Card border="dark" style={{ width: '18rem' }}>
+          <Card.Img variant="top" src={typescript} />
+          <Card.Body>
+            <Card.Title>Typescript</Card.Title>
+            <Card.Text>
+              Typescript and VISX to create a visualization of Twitter data.
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <Button
+              href="https://twitterviz.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="danger"
+            >
+              site
+            </Button>
+            <Button
+              href="https://github.com/AaronMullan/twitter-viz"
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="secondary"
+            >
+              code
+
+            </Button>
+          </Card.Footer>
+        </Card>
+      </OverlayTrigger>
+    </>
+  );
+}
 
 function reactTooltip(props) {
   return (
