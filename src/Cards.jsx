@@ -10,8 +10,8 @@ import opensource from './assets/opensource.png';
 import javascript from './assets/javascript.png';
 import jest from './assets/jest.png';
 import php from './assets/php.png';
-import gatsby from './assets/gatsby.png'
-import typescript from './assets/typescript.png'
+import gatsby from './assets/gatsby.png';
+import typescript from './assets/typescript-horizontal-2.png';
 
 function typescriptTooltip(props) {
   return (
@@ -476,7 +476,7 @@ export function GatsbyCard() {
           <Card.Body>
             <Card.Title style={{ color: '#F92672' }}>Gatsby</Card.Title>
             <Card.Text>
-            Site made with Gatsby/Contentful/GraphQL.
+              Site made with Gatsby/Contentful/GraphQL.
             </Card.Text>
           </Card.Body>
           <Card.Footer>
