@@ -3,21 +3,20 @@ import {
   Card, Button, Tooltip, OverlayTrigger,
 } from 'react-bootstrap';
 import shavedave from './assets/shavedave.png';
-import wantlistwatch from './assets/wantlistwatch.png';
+
 import node from './assets/node.png';
 import html from './assets/html.png';
 import opensource from './assets/opensource.png';
 import javascript from './assets/javascript.png';
 import jest from './assets/jest.png';
-import php from './assets/php.png';
-import gatsby from './assets/gatsby.png';
-import typescript from './assets/typescript-horizontal-2.png';
 
-function typescriptTooltip(props) {
+import gatsby from './assets/gatsby.png';
+import sprinklr from './assets/sprinklr.png';
+
+function sprinklrTooltip(props) {
   return (
     <Tooltip id="react-tooltip" {...props}>
-      {/* eslint-disable-next-line max-len */}
-      Portland, Oregon is regarded as one of the most liberal cities in the USA, while Mesa, AZ is often considered the most conservative. This visualization is made with data from the Twitter API for trends in those two cites.
+      I am part of a team of 7 Developers who build sprinklr.com
     </Tooltip>
   );
 }
@@ -28,33 +27,24 @@ export function TypescriptCard() {
       <OverlayTrigger
         placement="top"
         delay={{ show: 250, hide: 400 }}
-        overlay={typescriptTooltip}
+        overlay={sprinklrTooltip}
       >
         <Card border="dark" style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={typescript} />
+          <Card.Img variant="top" src={sprinklr} />
           <Card.Body>
-            <Card.Title>Typescript</Card.Title>
+            <Card.Title>Typescript / GraphQL</Card.Title>
             <Card.Text>
-              Typescript and VISX to create a visualization of Twitter data.
+              Marketing Site for Sprinklr Customer Experience Management.
             </Card.Text>
           </Card.Body>
           <Card.Footer>
             <Button
-              href="https://twitterviz.netlify.app/"
+              href="https://www.sprinklr.com/"
               target="_blank"
               rel="noopener noreferrer"
               variant="danger"
             >
               site
-            </Button>
-            <Button
-              href="https://github.com/AaronMullan/twitter-viz"
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="secondary"
-            >
-              code
-
             </Button>
           </Card.Footer>
         </Card>
@@ -63,55 +53,6 @@ export function TypescriptCard() {
   );
 }
 
-function reactTooltip(props) {
-  return (
-    <Tooltip id="react-tooltip" {...props}>
-      {/* eslint-disable-next-line max-len */}
-      App for finding users the best deals on items in the Discogs.com Marketplace. Use your own username, or borrow mine: aaroncmullan.
-    </Tooltip>
-  );
-}
-
-export function ReactCard() {
-  return (
-    <>
-      <OverlayTrigger
-        placement="top"
-        delay={{ show: 250, hide: 400 }}
-        overlay={reactTooltip}
-      >
-        <Card border="dark" style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={wantlistwatch} />
-          <Card.Body>
-            <Card.Title>React</Card.Title>
-            <Card.Text>
-              Hooks, Async API calls to find deals on Discogs.com.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <Button
-              href="https://wantlist-watch.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="danger"
-            >
-              site
-            </Button>
-            <Button
-              href="https://github.com/AaronMullan/wantlistwatch/blob/master/src/WantedItems.js"
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="secondary"
-            >
-              code
-
-            </Button>
-          </Card.Footer>
-        </Card>
-      </OverlayTrigger>
-    </>
-  );
-}
 function cssTooltip(props) {
   return (
     <Tooltip id="react-tooltip" {...props}>
@@ -408,53 +349,7 @@ export function JestCard() {
     </>
   );
 }
-function phpTooltip(props) {
-  return (
-    <Tooltip id="react-tooltip" {...props}>
-      {/* eslint-disable-next-line max-len */}
-      A shallow dive into the Laravel framework.
-    </Tooltip>
-  );
-}
-export function PHPCard() {
-  return (
-    <>
-      <OverlayTrigger
-        placement="top"
-        delay={{ show: 250, hide: 400 }}
-        overlay={phpTooltip}
-      >
-        <Card border="dark" style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={php} />
-          <Card.Body>
-            <Card.Title style={{ color: '#F92672' }}>PHP</Card.Title>
-            <Card.Text>
-              PHP with Laravel for quickie band site.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <Button
-              href="https://phpgoof.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="danger"
-            >
-              site
-            </Button>
-            <Button
-              href="https://github.com/AaronMullan/phptallfirs"
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="secondary"
-            >
-              code
-            </Button>
-          </Card.Footer>
-        </Card>
-      </OverlayTrigger>
-    </>
-  );
-}
+
 function gatsbyTooltip(props) {
   return (
     <Tooltip id="react-tooltip" {...props}>
