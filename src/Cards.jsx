@@ -53,55 +53,6 @@ export function TypescriptCard() {
   );
 }
 
-function reactTooltip(props) {
-  return (
-    <Tooltip id="react-tooltip" {...props}>
-      {/* eslint-disable-next-line max-len */}
-      App for finding users the best deals on items in the Discogs.com Marketplace. Use your own username, or borrow mine: aaroncmullan.
-    </Tooltip>
-  );
-}
-
-export function ReactCard() {
-  return (
-    <>
-      <OverlayTrigger
-        placement="top"
-        delay={{ show: 250, hide: 400 }}
-        overlay={reactTooltip}
-      >
-        <Card border="dark" style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={wantlistwatch} />
-          <Card.Body>
-            <Card.Title>React</Card.Title>
-            <Card.Text>
-              Hooks, Async API calls to find deals on Discogs.com.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <Button
-              href="https://wantlist-watch.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="danger"
-            >
-              site
-            </Button>
-            <Button
-              href="https://github.com/AaronMullan/wantlistwatch/blob/master/src/WantedItems.js"
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="secondary"
-            >
-              code
-
-            </Button>
-          </Card.Footer>
-        </Card>
-      </OverlayTrigger>
-    </>
-  );
-}
 function cssTooltip(props) {
   return (
     <Tooltip id="react-tooltip" {...props}>
@@ -398,53 +349,7 @@ export function JestCard() {
     </>
   );
 }
-function phpTooltip(props) {
-  return (
-    <Tooltip id="react-tooltip" {...props}>
-      {/* eslint-disable-next-line max-len */}
-      A shallow dive into the Laravel framework.
-    </Tooltip>
-  );
-}
-export function PHPCard() {
-  return (
-    <>
-      <OverlayTrigger
-        placement="top"
-        delay={{ show: 250, hide: 400 }}
-        overlay={phpTooltip}
-      >
-        <Card border="dark" style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={php} />
-          <Card.Body>
-            <Card.Title style={{ color: '#F92672' }}>PHP</Card.Title>
-            <Card.Text>
-              PHP with Laravel for quickie band site.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <Button
-              href="https://phpgoof.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="danger"
-            >
-              site
-            </Button>
-            <Button
-              href="https://github.com/AaronMullan/phptallfirs"
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="secondary"
-            >
-              code
-            </Button>
-          </Card.Footer>
-        </Card>
-      </OverlayTrigger>
-    </>
-  );
-}
+
 function gatsbyTooltip(props) {
   return (
     <Tooltip id="react-tooltip" {...props}>
