@@ -3,7 +3,7 @@ import {
   CardDeck,
 } from 'react-bootstrap';
 import {
-  TypescriptCard, CssCard, ReactCard, NodeCard, HTMLCard, OpensourceCard, JavascriptCard, JestCard, PHPCard, GatsbyCard,
+  TypescriptCard, CssCard, NodeCard, HTMLCard, OpensourceCard, JavascriptCard, JestCard, GatsbyCard,
 } from './Cards';
 import Header from './Header';
 import Hero from './Hero';
