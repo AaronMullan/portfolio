@@ -3,13 +3,13 @@ import {
   Card, Button, Tooltip, OverlayTrigger,
 } from 'react-bootstrap';
 import shavedave from './assets/shavedave.png';
-import wantlistwatch from './assets/wantlistwatch.png';
+
 import node from './assets/node.png';
 import html from './assets/html.png';
 import opensource from './assets/opensource.png';
 import javascript from './assets/javascript.png';
 import jest from './assets/jest.png';
-import php from './assets/php.png';
+
 import gatsby from './assets/gatsby.png';
 import sprinklr from './assets/sprinklr.png';
 
