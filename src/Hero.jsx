@@ -9,20 +9,13 @@ export default function Hero() {
 
         {' '}
         <span className="hello">Hello, World!  </span>
-        I am a Full Stack Developer focused on teamwork, learning, and having fun.
+        I am a Software Developer currently focused on the Front End, in a tech stack of Gatsby / React / GraphQL/ Theme UI/ Typescript, which we use to build sprinklr.com.
         <br />
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;Previous to coding, I worked as an Audio Engineer, primarily for the band
         {' '}
         <span className="lighter">Sonic Youth</span>
-        , managing their studio and doing live sound. I engineered or performed at over 1,000 concerts, touring with groups including
-        {' '}
-        <span className="lighter">Neutral Milk Hotel</span>
-        {' '}
-        and
-        {' '}
-        <span className="lighter">Cat Power</span>
-        . Additionally I earned over
+        , managing their studio and doing live sound. I engineered or performed at over 1,000 concerts, and earned over
         {' '}
         <a
           href="https://www.discogs.com/artist/265506-Aaron-Mullan"
@@ -31,14 +24,6 @@ export default function Hero() {
         >
           120 recording credits
         </a>
-        {' '}
-        ranging from
-        {' '}
-        <span className="lighter">Portugal the Man</span>
-        {' '}
-        to
-        {' '}
-        <span className="lighter">Christian Marclay</span>
         . Publications include articles in industry-leading magazine
         {' '}
         <a
@@ -71,7 +56,7 @@ export default function Hero() {
         cable network.
         <br />
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;After years traveling the globe I now bring the passion for craftsmanship and collaboration that made me successful in that field to software development. I have a relentless curiosity tempered by an ability to focus on the task at hand. An uncanny dedication to teamwork forged by years on the road and in the studio has given me the ability to communicate with all stakeholders to develop a vision and translate that into an inspiring and technically excellent product.
+        &nbsp;&nbsp;&nbsp;&nbsp;These days bring the passion for craftsmanship and collaboration that made me successful in that field to software development. I have a relentless curiosity tempered by an ability to focus on the task at hand. An uncanny dedication to teamwork forged by years on the road and in the studio has given me the ability to communicate with all stakeholders to develop a vision and translate that into an inspiring and technically excellent product.
       </p>
     </Jumbotron>
   );

@@ -23,27 +23,24 @@ function App() {
           </div>
           <div className="deck-container">
             <CardDeck>
-              <TypescriptCard/>
+              <TypescriptCard />
               <GatsbyCard />
             </CardDeck>
 
             <CardDeck>
-              <ReactCard />
+              <OpensourceCard />
+              {/* <ReactCard /> */}
               <CssCard />
             </CardDeck>
 
             <CardDeck>
-              <OpensourceCard />
               <HTMLCard />
+              <JavascriptCard />
             </CardDeck>
-            
+
             <CardDeck>
               <JestCard />
               <NodeCard />
-            </CardDeck>
-            <CardDeck>
-              <JavascriptCard />
-              <PHPCard />
             </CardDeck>
           </div>
         </div>

@@ -11,13 +11,12 @@ import javascript from './assets/javascript.png';
 import jest from './assets/jest.png';
 import php from './assets/php.png';
 import gatsby from './assets/gatsby.png';
-import typescript from './assets/typescript-horizontal-2.png';
+import sprinklr from './assets/sprinklr.png';
 
-function typescriptTooltip(props) {
+function sprinklrTooltip(props) {
   return (
     <Tooltip id="react-tooltip" {...props}>
-      {/* eslint-disable-next-line max-len */}
-      Portland, Oregon is regarded as one of the most liberal cities in the USA, while Mesa, AZ is often considered the most conservative. This visualization is made with data from the Twitter API for trends in those two cites.
+      I am part of a team of 7 Developers who build sprinklr.com
     </Tooltip>
   );
 }
@@ -28,33 +27,24 @@ export function TypescriptCard() {
       <OverlayTrigger
         placement="top"
         delay={{ show: 250, hide: 400 }}
-        overlay={typescriptTooltip}
+        overlay={sprinklrTooltip}
       >
         <Card border="dark" style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={typescript} />
+          <Card.Img variant="top" src={sprinklr} />
           <Card.Body>
-            <Card.Title>Typescript</Card.Title>
+            <Card.Title>Typescript / GraphQL</Card.Title>
             <Card.Text>
-              Typescript and VISX to create a visualization of Twitter data.
+              Marketing Site for Sprinklr Customer Experience Management.
             </Card.Text>
           </Card.Body>
           <Card.Footer>
             <Button
-              href="https://twitterviz.netlify.app/"
+              href="https://www.sprinklr.com/"
               target="_blank"
               rel="noopener noreferrer"
               variant="danger"
             >
               site
-            </Button>
-            <Button
-              href="https://github.com/AaronMullan/twitter-viz"
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="secondary"
-            >
-              code
-
             </Button>
           </Card.Footer>
         </Card>
