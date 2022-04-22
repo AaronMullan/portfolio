@@ -1,8 +1,7 @@
 // Override default variables before the import
 $body-bg: #272822;
 // Import Bootstrap and its default variables
-$theme-colors: (
-  primary: #A6E22E,
+$theme-colors: (primary: #A6E22E,
   secondary: #66D9EF,
 );
 
@@ -34,7 +33,17 @@ $yiq-contrasted-threshold: 175;
 $gray-900: #272822;
 $body-bg: $gray-900;
 $body-color: $white;
-$font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-sans-serif: "Lato",
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol";
 $font-size-base: 0.9375rem;
 $h1-font-size: 2.5rem;
 $h2-font-size: 2.25rem;
@@ -42,7 +51,7 @@ $h3-font-size: 2rem;
 $h4-font-size: 2rem;
 $h5-font-size: 1.5rem;
 $table-accent-bg: $gray-800;
-$table-hover-bg: rgba($white,.075);
+$table-hover-bg: rgba($white, .075);
 $table-border-color: $gray-700;
 $table-dark-bg: $gray-500;
 $table-dark-border-color: darken($gray-500, 7.5%);
@@ -98,11 +107,11 @@ $nav-link-padding-x: 2rem;
 $nav-link-disabled-color: $gray-500;
 $navbar-padding-y: 1rem;
 $navbar-dark-color: $white;
-$navbar-light-color: rgba($white,.5);
+$navbar-light-color: rgba($white, .5);
 $navbar-light-hover-color: $white;
 $navbar-light-active-color: $white;
-$navbar-light-disabled-color: rgba($white,.3);
-$navbar-light-toggler-border-color: rgba($white,.1);
+$navbar-light-disabled-color: rgba($white, .3);
+$navbar-light-toggler-border-color: rgba($white, .1);
 $pagination-border-width: 0;
 $pagination-active-bg: $pagination-hover-bg;
 $pagination-active-border-color: transparent;
@@ -115,6 +124,7 @@ $progress-font-size: 0.625rem;
 $headings-color: $success;
 
 @import '~bootstrap/scss/bootstrap.scss';
+
 .App {
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -127,16 +137,17 @@ $headings-color: $success;
   font-size: calc(10px + 2vmin);
   color: #F8F8F2;
   margin: 1.5vh 3vw;
+  min-width: 350px;
+
 }
-.title-container{
-  margin: 3vh 0;
-}
-.paragraph-container{
+
+.paragraph-container {
   display: flex;
   justify-content: center;
   margin: 5vh;
 }
-.paragraph{
+
+.paragraph {
   text-align: justify;
   font-size: .75em;
   background-color: $cyan;
@@ -145,80 +156,101 @@ $headings-color: $success;
   width: 80vw;
   padding: 5vh;
 }
-.summary{
+
+.summary {
   display: flex;
   justify-items: center;
   margin: 2vw 5vw;
   text-align: justify;
 }
-.card-deck{
-display: inline-block;
+
+.card-deck {
+  display: inline-block;
 }
-.card-footer{
+
+.card-footer {
   display: flex;
   justify-content: space-around;
 }
-.title-container{
+
+.title-container {
   padding: 1vh;
 }
-.card-text{
+
+.card-text {
   font-size: 1rem;
 }
-.about-text{
+
+.about-text {
   font-size: .8rem;
   line-height: normal;
   text-align: justify;
 }
-h1{
+
+h1 {
   font-family: 'Space Mono', monospace;
   font-weight: bold;
 }
-h5{
+
+h5 {
   color: $pink;
   font-size: 1.25rem;
   font-family: 'Space Mono', monospace;
 }
-.header{
+
+.header {
   width: 80vw;
   justify-content: space-around;
   background-color: hsla(55, 11%, 22%, .25);
   border: 1px solid hsl(50, 2%, 48%);
   border-radius: .15em;
   padding: 2vh 1vh;
+  margin-top: 1vh;
   letter-spacing: .1rem;
 }
-.icon-container{
+
+.body {
+  width: 79vw;
+}
+
+.icon-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  width: 75%;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: calc(50% + 10px);
-  margin-right: calc(25% + 30px);
+  // margin-left: calc(50% + 10px);
+  // margin-right: calc(25% + 30px);
 }
-.linkedin-icon{
+
+.linkedin-icon {
   height: 90%;
   fill: $cyan;
   border-radius: .2em;
 }
-.github-icon{
+
+.github-icon {
   height: 90%;
   fill: $yellow;
   border-radius: .2em;
-  margin-left: .5em;
+  margin-left: 100px;
 }
-.twitter-icon{
+
+.twitter-icon {
   height: 90%;
   fill: $orange;
   border-radius: .2em;
-  margin-left: .5em;
+  margin-left: 100px;
 }
-.tooltip-inner{
+
+.tooltip-inner {
   background-color: $gray-100;
   color: $gray-900;
   text-align: justify;
   border: 1px solid black;
 }
-.jumbotron{
+
+.jumbotron {
   background-color: hsla(55, 11%, 22%, .25);
   border: 1px solid hsl(50, 2%, 48%);
   margin-top: 2vh;
@@ -227,59 +259,69 @@ h5{
   text-align: justify;
   padding: 2vh 2vw;
 }
-.hello{
+
+.hello {
   font-family: 'Space Mono', monospace;
-  color:$pink;
+  color: $pink;
   font-size: 1.2rem;
 }
-.lighter{
+
+.lighter {
   color: $pink;
   font-weight: 500;
 
 }
-.icon-container-footer{
+
+.icon-container-footer {
   display: flex;
   justify-content: space-around;
   margin-top: 2vh;
   margin-bottom: 0;
-  margin-left: calc(25% + 30px);
-  margin-right: calc(25% + 30px);
+  min-width: 350px;
 }
-.linkedin-icon-footer{
+
+.linkedin-icon-footer {
   height: 100%;
   fill: $orange;
   border-radius: .2em;
 }
-.github-icon-footer{
+
+.github-icon-footer {
   height: 100%;
   fill: $cyan;
   border-radius: .2em;
   margin-left: 2em;
 }
-.twitter-icon-footer{
+
+.twitter-icon-footer {
   height: 100%;
   fill: $yellow;
   border-radius: .2em;
   margin-left: 2em;
 }
-@media (min-width: 576px){
-  .card-deck{
-  display: flex;
+
+@media (min-width: 576px) {
+  .card-deck {
+    display: flex;
   }
-  .jumbotron{
-    width:25vw;
+
+  .jumbotron {
+    width: 25vw;
     margin-top: 0vh;
     padding-top: 0px;
     margin-right: 2vw;
   }
-  .body{
+
+  .body {
     display: flex;
   }
-  .card{
+
+  .card {
     min-width: 200px;
     max-width: 42%;
   }
-  .card-deck .card{
+
+  .card-deck .card {
     margin-bottom: 2vh;
   }
-  }
+}

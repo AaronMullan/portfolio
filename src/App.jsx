@@ -3,7 +3,7 @@ import {
   CardDeck,
 } from 'react-bootstrap';
 import {
-  TypescriptCard, CssCard, NodeCard, HTMLCard, OpensourceCard, JavascriptCard, JestCard, GatsbyCard,
+  TypescriptCard, NodeCard, HTMLCard, OpensourceCard, JavascriptCard, JestCard, GatsbyCard, NewCards,
 } from './Cards';
 import Header from './Header';
 import Hero from './Hero';
@@ -13,7 +13,6 @@ function App() {
   return (
     <>
       <div className="App">
-
         <div className="title-container">
           <Header />
         </div>
@@ -23,14 +22,15 @@ function App() {
           </div>
           <div className="deck-container">
             <CardDeck>
-              <TypescriptCard />
-              <GatsbyCard />
+              {/* <TypescriptCard /> */}
+              <NewCards />
             </CardDeck>
 
             <CardDeck>
+              <GatsbyCard />
               <OpensourceCard />
               {/* <ReactCard /> */}
-              <CssCard />
+              {/* <CssCard /> */}
             </CardDeck>
 
             <CardDeck>

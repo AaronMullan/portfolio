@@ -2,21 +2,30 @@ import React from 'react';
 import {
   Card, Button, Tooltip, OverlayTrigger,
 } from 'react-bootstrap';
-import shavedave from './assets/shavedave.png';
+import cardData from './cardData';
 
+import shavedave from './assets/shavedave.png';
 import node from './assets/node.png';
 import html from './assets/html.png';
 import opensource from './assets/opensource.png';
 import javascript from './assets/javascript.png';
 import jest from './assets/jest.png';
-
 import gatsby from './assets/gatsby.png';
 import sprinklr from './assets/sprinklr.png';
+
+import AMCard from './Card';
+
+export function NewCards() {
+  return (
+    cardData.map((card) => (
+      <AMCard title={card.title} text={card.text} image={card.image} link={card.link} />))
+  );
+}
 
 function sprinklrTooltip(props) {
   return (
     <Tooltip id="react-tooltip" {...props}>
-      I am part of a team of 7 Developers who build sprinklr.com
+      I am part of a team of 5 Developers who build sprinklr.com
     </Tooltip>
   );
 }
