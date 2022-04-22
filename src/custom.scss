@@ -215,12 +215,16 @@ h5 {
 
 .icon-container {
   display: flex;
-  justify-content: flex-end;
-  width: 75%;
-  margin-top: 0;
+  justify-content: right;
+  margin-top: 2vh;
   margin-bottom: 0;
-  // margin-left: calc(50% + 10px);
-  // margin-right: calc(25% + 30px);
+  margin-right: 10vw;
+  min-width: 350px;
+}
+
+.icon {
+  min-width: 36px;
+  margin-left: 18px;
 }
 
 .linkedin-icon {
@@ -233,14 +237,12 @@ h5 {
   height: 90%;
   fill: $yellow;
   border-radius: .2em;
-  margin-left: 100px;
 }
 
 .twitter-icon {
   height: 90%;
   fill: $orange;
   border-radius: .2em;
-  margin-left: 100px;
 }
 
 .tooltip-inner {
@@ -258,6 +260,10 @@ h5 {
   font-size: .9rem;
   text-align: justify;
   padding: 2vh 2vw;
+}
+
+.deck-container {
+  max-width: 650px;
 }
 
 .hello {
@@ -306,7 +312,7 @@ h5 {
   }
 
   .jumbotron {
-    width: 25vw;
+    width: 30vw;
     margin-top: 0vh;
     padding-top: 0px;
     margin-right: 2vw;
@@ -314,11 +320,12 @@ h5 {
 
   .body {
     display: flex;
+    justify-content: space-between;
+    margin-top: 4vh;
   }
 
   .card {
     min-width: 200px;
-    max-width: 42%;
   }
 
   .card-deck .card {
