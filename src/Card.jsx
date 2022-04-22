@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Card as StyledCard, Button, Tooltip, OverlayTrigger,
-} from 'react-bootstrap';
+import { Card as StyledCard, Button } from 'react-bootstrap';
 
 export default function Card({
   title, text, image, link, linkText = 'site', secondaryLink, secondaryLinkText = 'code',
