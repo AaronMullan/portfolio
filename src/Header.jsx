@@ -8,7 +8,7 @@ export default function Header() {
     <div className="header">
       <h1 className="text-secondary">Aaron Mullan: Developer</h1>
       <div className="icon-container">
-        <div>
+        <div className="icon">
           <a
             href="https://www.linkedin.com/in/aaron-mullan/"
             target="_blank"
@@ -17,7 +17,7 @@ export default function Header() {
             <LinkedIn className="linkedin-icon" />
           </a>
         </div>
-        <div>
+        <div className="icon">
           <a
             href="https://github.com/AaronMullan"
             target="_blank"
@@ -26,7 +26,7 @@ export default function Header() {
             <Github className="github-icon" />
           </a>
         </div>
-        <div>
+        <div className="icon">
           <a
             href="https://twitter.com/AaronCMullan1"
             target="_blank"
