@@ -10,6 +10,7 @@ function Cards() {
       } = card;
       return (
         <Card
+          key={title}
           title={title}
           text={text}
           image={image}
