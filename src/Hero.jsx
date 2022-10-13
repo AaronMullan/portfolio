@@ -65,7 +65,7 @@ export default function Hero() {
         cable network.
         <br />
         <br />
-        &nbsp;&nbsp;&nbsp;&nbsp;These days bring the passion for craftsmanship and collaboration that made me successful in that field to software development. I have a relentless curiosity tempered by an ability to focus on the task at hand. An uncanny dedication to teamwork forged by years on the road and in the studio has given me the ability to communicate with all stakeholders to develop a vision and translate that into an inspiring and technically excellent product.
+        &nbsp;&nbsp;&nbsp;&nbsp;These days I bring the passion for craftsmanship and collaboration that made me successful in that field to software development. I have a relentless curiosity tempered by an ability to focus on the task at hand. An uncanny dedication to teamwork forged by years on the road and in the studio has given me the ability to communicate with all stakeholders to develop a vision and translate that into an inspiring and technically excellent product.
       </p>
     </Jumbotron>
   );
