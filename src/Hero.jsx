@@ -9,7 +9,7 @@ export default function Hero() {
 
         {' '}
         <span className="hello">Hello, World!  </span>
-        I am a Software Developer currently focused on the Front End, in a tech stack of Gatsby / React / GraphQL / Theme UI / Typescript, which we use to build
+        I am a Software Developer currently focused on the Front End, in a tech stack of Gatsby / React / GraphQL / Theme UI / Typescript, which we used to build
         {' '}
         <a
           href="https://www.sprinklr.com/"
