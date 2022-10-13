@@ -12,7 +12,7 @@ const cardData = [
   {
     title: 'Sprinklr',
     text:
-      'One of 5 developers building this marketing website using Typescript / GraphQL.',
+      'One of 5 developers who built features for this marketing website using Typescript / GraphQL.',
     link: 'https://www.sprinklr.com/',
     image: sprinklr,
     linkText: 'site',
