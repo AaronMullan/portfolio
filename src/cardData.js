@@ -1,4 +1,5 @@
 import notifizor from './assets/notifizor.png';
+import table from './assets/table.png'
 import node from './assets/node.png';
 import html from './assets/html.png';
 import opensource from './assets/opensource.png';
@@ -9,6 +10,13 @@ import sprinklr from './assets/sprinklr.png';
 import thisOne from './assets/this.png';
 
 const cardData = [
+  {
+    title: 'Tables',
+    text: 'React table component made with Gatsby/Contentful/GraphQL.',
+    image: table,
+    link: 'https://table-showcase.netlify.app/',
+    secondaryLink: 'https://github.com/AaronMullan/tables',
+  },
   {
     title: 'Sprinklr',
     text:
