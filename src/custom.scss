@@ -1,31 +1,32 @@
 // Override default variables before the import
 $body-bg: #272822;
 // Import Bootstrap and its default variables
-$theme-colors: (primary: #A6E22E,
-  secondary: #66D9EF,
+$theme-colors: (
+  primary: #a6e22e,
+  secondary: #66d9ef,
 );
 
 $white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #ebebeb;
 $gray-300: #dee2e6;
-$blue: #66D9EF;
+$blue: #66d9ef;
 $indigo: #6610f2;
 $purple: #6f42c1;
-$pink: #F92672;
-$orange: #FD971F;
-$yellow: #E6DB74;
-$green: #A6E22E;
+$pink: #f92672;
+$orange: #fd971f;
+$yellow: #e6db74;
+$green: #a6e22e;
 $teal: #20c997;
-$cyan: #AE81FF;
+$cyan: #ae81ff;
 $primary: $blue;
-$gray-700: #49483E;
+$gray-700: #49483e;
 $secondary: $gray-700;
 $success: $green;
 $info: $cyan;
 $warning: $orange;
 $danger: $pink;
-$gray-800: #3E3D32;
+$gray-800: #3e3d32;
 $light: $gray-800;
 $gray-500: rgb(136, 132, 111);
 $dark: $gray-500;
@@ -33,17 +34,9 @@ $yiq-contrasted-threshold: 175;
 $gray-900: #272822;
 $body-bg: $gray-900;
 $body-color: $white;
-$font-family-sans-serif: "Lato",
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue",
-Arial,
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol";
+$font-family-sans-serif: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
 $font-size-base: 0.9375rem;
 $h1-font-size: 2.5rem;
 $h2-font-size: 2.25rem;
@@ -51,13 +44,13 @@ $h3-font-size: 2rem;
 $h4-font-size: 2rem;
 $h5-font-size: 1.5rem;
 $table-accent-bg: $gray-800;
-$table-hover-bg: rgba($white, .075);
+$table-hover-bg: rgba($white, 0.075);
 $table-border-color: $gray-700;
 $table-dark-bg: $gray-500;
 $table-dark-border-color: darken($gray-500, 7.5%);
 $table-dark-color: $body-bg;
 $input-btn-padding-x: 1rem;
-$gray-600: #75715E;
+$gray-600: #75715e;
 $input-disabled-bg: $gray-600;
 $input-border-color: transparent;
 $input-group-addon-color: $gray-500;
@@ -70,10 +63,12 @@ $dropdown-link-color: $white;
 $dropdown-link-hover-color: $white;
 $dropdown-link-hover-bg: $primary;
 $nav-tabs-border-color: $gray-700;
-$nav-tabs-link-hover-border-color: $nav-tabs-border-color $nav-tabs-border-color transparent;
+$nav-tabs-link-hover-border-color: $nav-tabs-border-color $nav-tabs-border-color
+  transparent;
 $nav-tabs-link-active-color: $white;
 $nav-tabs-link-active-bg: $nav-tabs-border-color;
-$nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-color transparent;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color
+  $nav-tabs-border-color transparent;
 $navbar-dark-hover-color: $success;
 $pagination-color: $white;
 $pagination-bg: $success;
@@ -107,11 +102,11 @@ $nav-link-padding-x: 2rem;
 $nav-link-disabled-color: $gray-500;
 $navbar-padding-y: 1rem;
 $navbar-dark-color: $white;
-$navbar-light-color: rgba($white, .5);
+$navbar-light-color: rgba($white, 0.5);
 $navbar-light-hover-color: $white;
 $navbar-light-active-color: $white;
-$navbar-light-disabled-color: rgba($white, .3);
-$navbar-light-toggler-border-color: rgba($white, .1);
+$navbar-light-disabled-color: rgba($white, 0.3);
+$navbar-light-toggler-border-color: rgba($white, 0.1);
 $pagination-border-width: 0;
 $pagination-active-bg: $pagination-hover-bg;
 $pagination-active-border-color: transparent;
@@ -135,10 +130,9 @@ $headings-color: $success;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #F8F8F2;
+  color: #f8f8f2;
   margin: 1.5vh 3vw;
   min-width: 350px;
-
 }
 
 .paragraph-container {
@@ -149,9 +143,9 @@ $headings-color: $success;
 
 .paragraph {
   text-align: justify;
-  font-size: .75em;
+  font-size: 0.75em;
   background-color: $cyan;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   line-height: 1.2;
   width: 80vw;
   padding: 5vh;
@@ -182,7 +176,7 @@ $headings-color: $success;
 }
 
 .about-text {
-  font-size: .8rem;
+  font-size: 0.8rem;
   line-height: normal;
   text-align: justify;
 }
@@ -201,12 +195,12 @@ h5 {
 .header {
   width: 80vw;
   justify-content: space-around;
-  background-color: hsla(55, 11%, 22%, .25);
+  background-color: hsla(55, 11%, 22%, 0.25);
   border: 1px solid hsl(50, 2%, 48%);
-  border-radius: .15em;
+  border-radius: 0.15em;
   padding: 2vh 1vh;
   margin-top: 1vh;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 .body {
@@ -230,19 +224,13 @@ h5 {
 .linkedin-icon {
   height: 90%;
   fill: $cyan;
-  border-radius: .2em;
+  border-radius: 0.2em;
 }
 
 .github-icon {
   height: 90%;
   fill: $yellow;
-  border-radius: .2em;
-}
-
-.twitter-icon {
-  height: 90%;
-  fill: $orange;
-  border-radius: .2em;
+  border-radius: 0.2em;
 }
 
 .tooltip-inner {
@@ -253,11 +241,11 @@ h5 {
 }
 
 .jumbotron {
-  background-color: hsla(55, 11%, 22%, .25);
+  background-color: hsla(55, 11%, 22%, 0.25);
   border: 1px solid hsl(50, 2%, 48%);
   margin-top: 2vh;
   display: flex;
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-align: justify;
   padding: 2vh 2vw;
 }
@@ -275,7 +263,6 @@ h5 {
 .lighter {
   color: $pink;
   font-weight: 500;
-
 }
 
 .icon-container-footer {
@@ -289,20 +276,13 @@ h5 {
 .linkedin-icon-footer {
   height: 100%;
   fill: $orange;
-  border-radius: .2em;
+  border-radius: 0.2em;
 }
 
 .github-icon-footer {
   height: 100%;
   fill: $cyan;
-  border-radius: .2em;
-  margin-left: 2em;
-}
-
-.twitter-icon-footer {
-  height: 100%;
-  fill: $yellow;
-  border-radius: .2em;
+  border-radius: 0.2em;
   margin-left: 2em;
 }
 
